@@ -1,0 +1,16 @@
+# Python virtual environment (recreate with: pip install -r requirements.txt)
+myenv/
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# YOLO weights - large, and downloaded automatically on first run
+models/
+*.pt
+
+# Arduino build output
+build/
+
+# macOS
+.DS_Store

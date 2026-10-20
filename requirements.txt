@@ -1,0 +1,16 @@
+# Install with:  pip install -r requirements.txt
+#
+# TensorFlow is NOT required: detector.py imports only cvlib's
+# object-detection module (and uses cvlib's draw_bbox for drawing).
+# Text-to-speech uses macOS's built-in `say` command (nothing to install).
+
+opencv-python>=4.5,<5   # OpenCV 5 removed the Darknet (YOLO) importer cvlib relies on
+numpy
+cvlib
+ultralytics>=8.4   # YOLO26/YOLO11 models (installs PyTorch; uses the Mac GPU)
+# cvlib dependencies used by object detection (downloading YOLO weights, etc.)
+requests
+progressbar
+imutils
+imageio
+pillow
